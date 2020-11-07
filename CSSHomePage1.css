@@ -1,3 +1,7 @@
+*{
+    margin: 0;
+    padding: 0;
+}
 #page {
     /* padding: 5px; */
     margin: 20px auto;
@@ -13,6 +17,8 @@
 .navigation{
     background-color: rgb(74, 148, 95);
     align-self: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 .navigation ul{
     list-style-type: none;   /* vanno via pallini */
@@ -61,23 +67,26 @@
 	margin: 0;
 	background: rgb(74, 148, 95);
 	float:left;
-	box-sizing: border-box;
+    box-sizing: border-box;
+    max-height: 100%;
 }
 
 .courses h2{
     text-align: center;
+    padding-bottom: 15px;
 }
 
 .courses p{
     color: black;
     font-weight: 500;
+
 }
 
 
 
 
 #sidebar {
-    /* padding: 15px; */
+    padding: 15px;
 	width: 20%;
     float: right;
     background: rgb(74, 148, 95);
@@ -86,13 +95,15 @@
 #sidebar h2{
     text-align: center;
     color: black;
-
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 .sidenav ul{
     /* border: 2.5px solid black; */
     overflow: hidden;
     /* text-align: center; */
-    margin-left: -40px;
+    /* margin-left: -40px; */
+    list-style-type: none;
 }
 .sidenav ul li{
     display: block;
@@ -118,29 +129,3 @@
 }
 
 
-#presentazione{
-    border: 5px solid white;
-}
-
-
-
-.table{
-    border: 5px solid blue;
-    float: left;
-    max-width: 100%;
-}
-
-.cell{
-    text-align: center;
-    max-width: 100%;
-    color: white;
-}
-
-
-
-
-#contatti {
-    clear: both;
-    border: solid 1px #ccc;
-    padding: 15px;
-}
