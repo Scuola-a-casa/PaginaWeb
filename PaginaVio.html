@@ -6,12 +6,12 @@
         <link rel="stylesheet" type="text/css" href="PaginaVio.css">
     </head>
     <body>        
-            <img src="image.jpg" alt='messaggio "alternativo"' width="100%" >  
+            <img src="Assets/immagineProgetto.jpg" alt='messaggio "alternativo"' width="100%" >  
             <nav align="Center">
                 <ul>
-                   <li><a href="LinkHomePage">HomePage</a></li>
-                   <li><a href="PaginaMoira">HTML</a></li>
-                   <li><a href="PaginaAle">JavaScript</a></li>
+                   <li><a href="HomePage.html">HomePage</a></li>
+                   <li><a href="PaginaMoira.html">HTML</a></li>
+                   <li><a href="PaginaAlessio.html">JavaScript</a></li>
                 </ul>
                    
            </nav> 
@@ -29,8 +29,60 @@
                     </p>
                 </div>
             </div>
-            
+            <div>
+            <table id="table1" border="1" cellpadding="10">
+                <tbody width="100"><tr class="cella"><th colspan="2" id="titolo">LEZIONI</th></tr>
+                    <tr id="testo"><th class="cella">Lezione 1</th><th>Lezione 2</th></tr>
+                    <tr id="testo"></tr><td><ul><li>Introduzione</li><li>Variabili e operatori</li></ul></td><td><ul><li>Funzioni</li><li>Funzioni ricorsive</li></ul></td></tr>
+                    <tr id="testo"><th class="cella">Lezione 3</th><th>Lezione 4</th></tr>
+                    <tr id="testo"></tr><td><ul><li>Oggetti e classi</li><li>Cicli</li></ul></td><td><ul><li>Progettazione</li><li>Realizzazione Progetto</li></ul></td></tr>
+            </table>
+
+            <aside id="sidebar">
+                <h3>NOTA BENE:</h3>
+                <p><ol><li>Il corso sarà trasmesso in diretta streaming.</li></p>
+                    <p><li>Ciascuna lezione sarà registrata.</li></p>   
+                <p><li>Per ottenere l'attestato di partecipazione è necessario seguire almeno il 75% delle lezioni.</li></ol></p>
+            </aside>
+
+            <table border="2" id="tabellacalcoloore">
+            <tbody>
+                <tr><th id="titolo"  class="cella">LEZIONE</th><th id="titolo" class="cella">ORE DI LEZIONE</th></tr>
+                <tr id="testo"><td>Lezione 1</td><td>2</td></tr>
+                <tr id="testo"><td>Lezione 2</td><td>3</td></tr>
+                <tr id="testo"><td>Lezione 3</td><td>3</td></tr>
+                <tr id="testo"><td>Lezione 4</td><td>5</td></tr>
+                <tr id="testo"><td>TOTALE</td><td id="totale"></td></tr>
+            </tbody>
+        </table>
+    </div>
+
+        <script>
+            var tab = document.getElementById("tabellacalcoloore");
+            var cells = tab.getElementsByTagName("td");
+            var tot = 0;
+            var valore = 0;
+            for(i = 0; i < cells.length - 1; i ++ )
+            {
+                valore = cells[i].textContent;               
+                if(!isNaN(valore))
+                {
+                    valore = parseInt(valore);
+                    tot = tot + valore;
+                }
+            }
+            document.getElementById("totale").textContent=tot;
+          
+        </script>
         
-    </body>
+        <div>
+            <footer id="footer" align="Center">
+                <h4 id="titolo">CONTATTI UTILI: <a href="https://www.istitutogreppi.edu.it">SITO ISTITUZIONALE</a> - INSTAGRAM: @issgreppi - FACEBOOK: I.I.S.S.Alessandro Greppi</h4>
+            </footer>
+        </div>
+        
+    </body> 
+        
+    
 
 </html>
