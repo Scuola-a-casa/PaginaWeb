@@ -3,13 +3,13 @@
     padding: 0;
     box-sizing: border-box;
 }
-#page {
+body{
     background-color: black;
 }
 
 
 .stretch{
-    height: 45%;
+    max-height: 45%;
     width: 100%;
     border-radius: 8px;
 }
@@ -56,8 +56,7 @@
 	visibility: hidden;
 	display: block;
 	font-size: 0;
-	content: " ";
-	clear: both;
+	/* content: " "; */
 	height: 0;
 }
 
@@ -125,3 +124,41 @@
 }
 
 
+
+#presentazione{
+    padding: 5px;
+    border: 5px solid white;
+    margin-top: 20px;
+}
+#presentazione p{
+    color: white;
+    font-size: large;
+}
+
+
+.table{
+    border: 5px solid rgb(74, 148, 95);
+    float: left;
+    /* width: 100%; */
+    margin-top: 20px;
+}
+#hrow th{
+    text-align: center;
+    color: white;
+    width: 50%;
+    font-size: large;
+}
+.drow td{
+    text-align: center;
+    color: white;
+}
+
+
+
+
+#contatti {
+    clear: both;
+    border: solid 1px #ccc;
+    padding: 15px;
+    margin-top: 20px;
+}
