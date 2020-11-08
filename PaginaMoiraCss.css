@@ -62,3 +62,41 @@ nav li{
     font-size: medium;
     color: white;
 }
+
+#table1
+    {
+        width: 70%;     
+        border: 5px solid rgb(229, 207, 5);
+        color:white;
+        margin-top: 15px;
+        float: left;
+    }
+    th
+    {
+        color: red;
+    }
+    h1 {
+        font: bold 36px/100% Arial, Helvetica, sans-serif;
+    }
+    #table2
+    {
+        width: 100%;     
+        border: 5px solid rgb(5, 195, 229);
+        color:white;
+        margin-top: 15px;
+        float: left;
+    }
+    #sidebar 
+    {
+        width: 25%;
+        margin-top: 15px;
+        padding-left: 15px;
+        margin-left: 15px;
+        float: left;
+        font-style: italic;
+        background-color: rgb(102, 226, 189);
+        font-size: 20;
+    }
+    p{
+        color: white;
+    }
