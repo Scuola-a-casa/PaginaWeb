@@ -16,12 +16,13 @@
         <nav class="navigation" align="center">    
             <ul>
                 <li><a href="PaginaVio.html">C#</a></li>
-                <li><a href="prova1.html">JavaScript</a></li>
-                <li><a href="prova1.html">HTML</a></li>
+                <li><a href="PaginaAlessio.html">JavaScript</a></li>
+                <li><a href="PaginaMoira.html">HTML</a></li>
             </ul>
         </nav>
         
         <div class="contenitore clearfix">
+        <div class="riga">
             <div class="courses">
                 <h2>
                     Corso C#
@@ -46,14 +47,15 @@
                 Il Dipartimento del Tesoro degli Stati Uniti ha lanciato misure restrittive per più di 3.900 nuovi soggetti, negli ultimi quattro anni, e gli iscritti alle blacklist statunitensi, dell'Unione europea e delle Nazioni Unite sono oltre 41 mila. "Viviamo in un momento di forti turbolenze internazionali, tali da mettere in crisi il modello di globalizzazione". dichiara il presidente di Awos A world of sanctions, Zeno Poggi, presentando al Senato il nuovo rapporto dell'associazione "Geopolitica e commercio estero".
                 </p>
             </div>
+        </div>
             <div id="sidebar">
                 <aside>
                     <h2>Corsi</h2>
                     <nav class="sidenav">
                         <ul>
                             <li><a href="PaginaVio.html">C#</a></li>
-                            <li><a href="">JavaScript</a></li>
-                            <li><a href="">HTML</a></li>
+                            <li><a href="PaginaAlessio.html">JavaScript</a></li>
+                            <li><a href="PaginaMoira.html">HTML</a></li>
                         </ul>
                     </nav>
                 </aside>
@@ -66,20 +68,20 @@
                 diplomato sia di adattarsi facilmente alle continue innovazioni del mercato del lavoro, sia di proseguire
                 gli studi con le competenze necessarie.</p>
         </div>
-        <table class="table" border="2px" width="100%">
+        <table id="table" border="2px" width="100%">
             <tbody>
                 <tr id="hrow"><th>Corsi</th><th>Numero di ore</th></tr>
                 <tr class="drow">
                     <td>Corso C#</td>
-                    <td id="totorecs"></td>
+                    <td>13</td>
                 </tr>
                 <tr class="drow">
                     <td>Corso HTML</td>
-                    <td id="totorehtml"></td>
+                    <td>15</td>
                 </tr>
                 <tr class="drow">
                     <td>Corso JavaScript</td>
-                    <td id="totorejs"></td>
+                    <td>14</td>
                 </tr>
                 <tr class="drow">
                     <td>Totale Ore</td>
@@ -92,12 +94,26 @@
 
 
         <footer id="contatti">
-            <h2>Piè pagina</h2>
+            <h4 id="titolo">CONTATTI UTILI: <a href="https://www.istitutogreppi.edu.it" target="_blank">SITO ISTITUZIONALE</a> - INSTAGRAM: <a href="https://www.instagram.com/iissvillagreppi/" target="_blank">@iissvillagreppi</a> - FACEBOOK: I.I.S.S. Alessandro Greppi</h4>
         </footer>
 
 
         <script>
-            
+            var tab = document.getElementById("table");
+            var cells = tab.getElementsByTagName("td");
+            var tot = 0;
+            var valore = 0;
+            for (i = 0; i < cells.length - 1; i++)
+            {
+                valore = cells[i].textContent;
+                if(! isNaN(valore))
+                {
+                    valore = parseInt(valore);
+                    tot = tot + valore;
+                }
+            }
+
+            document.getElementById("totore").textContent = tot;
         </script>
         
     

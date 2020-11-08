@@ -49,7 +49,8 @@ body{
 .contenitore{
     /* float: bottom; */
     padding: 5px;
-    max-height: 30%;
+    max-height: auto;
+    max-width: 100%;
     overflow: hidden;
 }
 .clearfix:after {
@@ -61,14 +62,14 @@ body{
 }
 
 .courses{
-    width: 25%;
+    max-width: 25%;
 	padding: 15px;
 	background: rgb(74, 148, 95);
 	float:left;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     height: inherit;
-    overflow: hidden;
-    object-fit: cover;
+    /* overflow: hidden; */
+    object-fit: scale-down;
 }
 
 .courses h2{
@@ -87,6 +88,7 @@ body{
 
 #sidebar {
     /* padding: 15px; */
+    height: fit-content;
 	width: 24%;
     float: right;
     background: rgb(74, 148, 95);
@@ -136,11 +138,12 @@ body{
 }
 
 
-.table{
+#table{
     border: 5px solid rgb(74, 148, 95);
     float: left;
     /* width: 100%; */
     margin-top: 20px;
+    margin-bottom: 20px;
 }
 #hrow th{
     text-align: center;
@@ -158,10 +161,35 @@ body{
 
 #contatti {
     clear: both;
-    border: solid 1px #ccc;
+    border: 5px solid white;
     padding: 15px;
     margin-top: 20px;
 }
-#contatti h2{
+#contatti h4{
     color: white;
+    text-align: center;
 }
+#contatti a{
+    text-decoration: none;
+}
+
+/* .riga:after{
+    content: "";
+    display: table;
+    clear: both;
+} */
+
+@media screen and (max-width:960px){​​
+
+    .courses {
+        width: 50%;
+    }
+    .courses:last-of-type{
+        float: none ;
+    }
+    #sidebar {
+        width: 49%;
+        margin-top: 20px;
+    }
+
+}​​
