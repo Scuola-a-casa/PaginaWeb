@@ -1,4 +1,4 @@
- body {
+body {
 	font: 1em/150% Arial, Helvetica, sans-serif;
 }
 a {
@@ -44,7 +44,22 @@ STRUTTURA - dimensione
 #contitoreBottoni{
     display: inline-block;
 }
-
+#contenutoTabella {
+    width: 100%;
+    text-align: center;
+    float: bottom;
+}
+#contenutoTabella table{
+    width: 50%;
+    float: left;
+}
+#contenutoTabella2 {
+    width: 100%;
+    text-align: center;
+}
+#immagineProgetto{
+    width: auto;
+}
 #content {
     width: auto;
     padding: 19px;
@@ -75,8 +90,14 @@ STRUTTURA - dimensione
     box-sizing: border-box;
     overflow: hidden;
 }
-
-#header, #content,  {
+#sidebar {
+    width: 49.8%;
+    height: auto;
+    float: left;
+    text-align: center;
+    background: red;
+}
+#header, #content, #sidebar {
 	margin-bottom: 5px;
 }
 #pagewrap, #header, #content, #sidebar, #footer {
