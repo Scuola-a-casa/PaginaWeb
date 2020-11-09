@@ -47,21 +47,24 @@ body{
 
 .contenitore{
     /* float: bottom; */
-    padding: 5px;
     max-height: auto;
-    max-width: 100%;
+    max-width: 75%;
     overflow: hidden;
+    margin-top: 20px;
 }
 .clearfix:after {
 	visibility: hidden;
 	display: block;
 	font-size: 0;
 	/* content: " "; */
-	height: 0;
+    height: 0;
+    clear: both;
 }
-
+.clearfix{
+    display: inline-block;
+}
 .courses{
-    max-width: 25%;
+    width: 33.3%;
     padding: 15px;
     border: 5px solid rgb(5, 145, 226);
 	float:left;
@@ -86,17 +89,21 @@ body{
 
 
 #sidebar {
-    /* padding: 15px; */
+    margin-top: 20px;
+    margin-bottom: 20px;
     height: fit-content;
 	width: 24%;
     float: right;
     background: rgb(252, 209, 130);
+    overflow: hidden;
+    
 }
 #sidebar h2{
     text-align: center;
     color: black;
     padding-top: 15px;
     padding-bottom: 15px;
+    object-fit: cover;
 }
 .sidenav ul{
     overflow: hidden;
@@ -130,6 +137,9 @@ body{
     padding: 5px;
     border: 5px solid rgb(33,235,35);
     margin-top: 20px;
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
 }
 #presentazione p{
     color: white;
@@ -146,7 +156,7 @@ body{
 }
 #hrow th{
     text-align: center;
-    color: white;
+    color: rgb(60, 214, 207);
     width: 50%;
     font-size: large;
 }
@@ -180,15 +190,22 @@ body{
 
 @media screen and (max-width:960px){​​
 
+    .contenitore{
+        max-width: 50%;
+    }
     .courses {
         width: 50%;
     }
     .courses:last-of-type{
-        float: none ;
+        float: none;
+        /* flex: auto; */
+        width: auto;
     }
     #sidebar {
-        width: 49%;
+        /* width: 49%; */
         margin-top: 20px;
+        float: right;
+        flex-wrap: nowrap;
     }
 
 }​​
