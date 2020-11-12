@@ -1,5 +1,6 @@
 body {
-	font: 1em/150% Arial, Helvetica, sans-serif;
+    font: 1em/150% Arial, Helvetica, sans-serif;
+    background-color: rgb(0, 0, 0, 0.9);  
 }
 a {
 	color: #669;
@@ -16,7 +17,7 @@ h1 {
 NAVIGAZIONE
 ***************************************************************************/
  nav{
-    background-color: silver;
+    background-color: rgb(229, 5, 119);
     color: black;
 }
 nav ul{
@@ -52,10 +53,12 @@ STRUTTURA - dimensione
 #contenutoTabella table{
     width: 50%;
     float: left;
+    border:rgb(5, 145, 226);
 }
 #contenutoTabella2 {
     width: 100%;
     text-align: center;
+    border:2,5px solid rgb(229, 5, 119);
 }
 #immagineProgetto{
     width: auto;
@@ -64,7 +67,7 @@ STRUTTURA - dimensione
     width: auto;
     padding: 19px;
     margin: 0px;
-    background: rgb(23, 153, 23);
+    background: black(23, 153, 23);
     float: none;
     text-align: center;
 }
@@ -85,7 +88,7 @@ STRUTTURA - dimensione
     width: 100%;
     padding: 15px;
     margin: 0;
-    background: rgb(92, 92, 92);
+    background: black;
     float: left;
     box-sizing: border-box;
     overflow: hidden;
@@ -95,7 +98,8 @@ STRUTTURA - dimensione
     height: auto;
     float: left;
     text-align: center;
-    background: red;
+    background: black;
+    color: rgb(5, 145, 226);
 }
 #header, #content, #sidebar {
 	margin-bottom: 5px;
