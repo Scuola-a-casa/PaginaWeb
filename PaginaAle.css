@@ -54,11 +54,15 @@ STRUTTURA - dimensione
     width: 50%;
     float: left;
     border:rgb(5, 145, 226);
+    color: white;
 }
 #contenutoTabella2 {
     width: 100%;
     text-align: center;
     border:2,5px solid rgb(229, 5, 119);
+}
+#contenutoTabella2 table{
+    color: white;
 }
 #immagineProgetto{
     width: auto;
@@ -70,6 +74,9 @@ STRUTTURA - dimensione
     background: black(23, 153, 23);
     float: none;
     text-align: center;
+}
+#content h2{
+    color: white;
 }
 .contenitore {
     width: auto;
@@ -92,6 +99,10 @@ STRUTTURA - dimensione
     float: left;
     box-sizing: border-box;
     overflow: hidden;
+    
+}
+.box p{
+    color: white;
 }
 #sidebar {
     width: 49.8%;
